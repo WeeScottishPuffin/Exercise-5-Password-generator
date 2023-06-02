@@ -12,7 +12,7 @@ function copy(){
 }
 function generate(){
   let pass = "";
-  let len = Math.max(Number(document.getElementById("length").value),16);
+  let len = Math.min(Number(document.getElementById("length").value),16);
   let ini = document.getElementById("initText").value;
   let upc = document.getElementById("uppercase").checked;
   let lwc = document.getElementById("lowercase").checked;
